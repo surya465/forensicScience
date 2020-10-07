@@ -1,0 +1,164 @@
+@font-face {
+ font-family: bebas kai;
+ src: url(fonts/BebasKai.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+ font-family: Requiem;
+  src: url(fonts/Requiem.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+#particles-js{
+  background-color: #262626;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background: #f6f4f1;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: auto;
+    color: black;
+    font-weight: bold;
+    font-family:Requiem;
+    text-align: center;
+}
+.container{
+  position: absolute;
+  width: 40%;
+  background:white;
+  margin-top: 10%;
+  margin-left: 30%;
+  text-align: center;
+  border-radius: 25px;
+  padding-top: 25px;
+  padding-bottom:15px;
+  box-shadow: 0 0 6px 0 white;
+}
+#label{
+  font-family: bebas kai;
+  font-size: 20px;
+  font-weight: bold;
+}
+#sel1 , #sel2{
+  padding: 0px 0px 0px 10px;
+  border:2px solid black;
+  font-family:bebas kai;
+  font-weight: bolder;
+  font-size: 20px;
+}
+#button{
+  background: black;
+  border: 0px solid black;
+  font-family: bebas kai;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+/* books store css */
+.book_container{
+  background-image: url('https://cdn.pixabay.com/photo/2019/01/23/03/12/microscopy-3949484_960_720.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.book_shelf{
+  border-style:outset;
+  margin: auto;
+  margin-top: 100px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 5%;
+  justify-content: space-between;
+}
+.book{
+  align-items: center;
+  margin-top: 20px;
+  width: 190px;
+  height: 272px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	 box-shadow: 0 9px 7px -5px black;
+   background-image: url('bg/book_default.jpg');
+   text-align: center;
+   padding-top: 60px;
+   border-radius: 10px;
+
+}
+.book p{
+   font-family:Requiem;
+   font-size: 20px;
+   color: white;
+   letter-spacing: 1px;
+}
+a:hover{
+  text-decoration: none;
+}
+@media(max-width:420px){
+  .header{
+      width: 100%;
+      height: auto;
+  }
+  .container{
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-top:125px;
+    margin-left:auto;
+  }
+  .book_shelf{
+    margin-top: 150px;
+    padding: 5% 3px;
+  }
+  .book{
+    margin-top: 20px;
+    width: 150px;
+    height: 240px;
+    background-position: -13px 0px;
+  }
+  .book p{
+     font-family:Requiem;
+     font-size: 15px;
+     color: white;
+     letter-spacing: 1px;
+  }
+
+}
+@media (min-width:420px) and (max-width:768px){
+   .container{
+     width: 80%;
+     font-size: 20px;
+     margin-top:120px;
+     margin-left:55px;
+   }
+}
+@media (min-width:768px) and (max-width:1024px){
+   .container{
+     width: 90%;
+     font-size: 20px;
+     margin-top: 120px;
+     margin-left: 40px;
+   }
+}
+/* estra fitting  */
+h2{
+  text-align: center;
+  font-family: Requiem;
+  width:50%;
+  margin-top:200px;
+  color: black;
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+}
